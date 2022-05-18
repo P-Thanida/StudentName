@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <form @submit="onSubmit" >
+    <div>
+      <label>Name : </label>
+      <input type="text" v-model="name" name="name" placeholder="Enter Your Name" />
+    </div> <br>
+    <div>
+      <label>Age : </label>
+      <input
+        type="text"
+        v-model="age"
+        name="age"
+        placeholder="Enter Your Age"
+      />
+    </div> <br>
+    <input type="submit" value="Save Information"/>
+  </form>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: "App",
+  // components: {
+  //   HelloWorld
+  // }
 }
-</script>
 
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
