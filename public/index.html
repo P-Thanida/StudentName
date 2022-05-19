@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title>Student Information</title>
+    <link rel="stylesheet"href="main.css">
   </head>
   <body>
+    <!-- <div id="app"></div> -->
+    <div class="app-container" id="datalist">
+      <h1 class="app-header">Name</h1>
+      <div class="add-data">
+        <input type="text" autocomplete="off" class="data-input" placeholder="Enter your name" v-model="datas.name" @keyup.enter="newItem"/>
+        <input type="submit" value="" class="submit-data" title="Add Data" @click="newItem"/>
+      </div>
 
-    <div id="app"></div>
+      <ul class="data-list">
+        <li class="data-list-item" v-for="data in datas">
+          <label class="data-list-item-label">
+            <input type="checkbox" />
+            <span>{{data.name}}</span>
+          </label>
+          <span class="delete-btn" @click="delItem(data)" title="delete data">{{data.del}}</span>
+        </li> 
+      </ul>
+    </div>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
