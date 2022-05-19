@@ -17,10 +17,10 @@ body {
   justify-content: center;
   align-items: center;
   background-image: 
-    linear-gradient(62deg,#ed0100 13%,rgba(144, 99, 196, 0.5) 4%),
-    linear-gradient(44deg,#61666a 39%,rgba(204, 189, 189, 0.5) 18%),
-    linear-gradient(118deg,#590111 40%,rgba(203, 142, 164, 0.5) 54%),
-    linear-gradient(58deg,#010101 83%,rgba(79, 144, 229, 0.54) 23%);
+    linear-gradient(62deg,#E09145 13%,rgba(65, 173, 223, 0.5) 4%),
+    linear-gradient(44deg,#61666a 39%,rgba(255, 255, 255, 0.5) 18%),
+    linear-gradient(118deg, #FCD9B8 40%,rgba(203, 203, 142, 0.5) 54%),
+    linear-gradient(58deg,#010101 83%,rgba(165, 195, 233, 0.907) 23%);
   background-blend-mode: normal, lighten, multiply, hard-light;
   font-family: "DM Sans", sans-serif;
   overflow: hidden;
