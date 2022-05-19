@@ -11,9 +11,9 @@
   <body>
     
     <div class="app-container" id="datalist">
-      <h1 class="app-header">Name</h1>
+      <h1 class="app-header">Please enter your name.</h1>
       <div class="add-data">
-        <input type="text" autocomplete="off" class="data-input" placeholder="Enter your name" v-model="datas.name" @keyup.enter="newItem"/>
+        <input type="text" autocomplete="off" class="data-input" placeholder="Name" v-model="datas.name" @keyup.enter="newItem"/>
         <input type="submit" value="" class="submit-data" title="Add Data" @click="newItem"/>
       </div>
 
