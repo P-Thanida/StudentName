@@ -19,7 +19,7 @@ body {
   background-image: 
     linear-gradient(62deg,#E09145 13%,rgba(65, 173, 223, 0.5) 4%),
     linear-gradient(44deg,#61666a 39%,rgba(255, 255, 255, 0.5) 18%),
-    linear-gradient(118deg, #FCD9B8 40%,rgba(203, 203, 142, 0.5) 54%),
+    linear-gradient(118deg, #FCD9B8 40%,rgba(203, 142, 142, 0.5) 54%),
     linear-gradient(58deg,#010101 83%,rgba(165, 195, 233, 0.907) 23%);
   background-blend-mode: normal, lighten, multiply, hard-light;
   font-family: "DM Sans", sans-serif;
