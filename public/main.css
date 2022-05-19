@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 :root {
-  --checkbox-color: rgb(202, 60, 60);
-  --checkbox-shadow: rgba(238, 156, 167, 0.2);
   --add-button: rgba(255, 255, 255, 0.7);
   --add-button-shadow: rgba(238, 156, 167, 0.4);
 }
@@ -22,7 +20,7 @@ body {
     linear-gradient(62deg,#ed0100 13%,rgba(144, 99, 196, 0.5) 4%),
     linear-gradient(44deg,#61666a 39%,rgba(204, 189, 189, 0.5) 18%),
     linear-gradient(118deg,#590111 40%,rgba(203, 142, 164, 0.5) 54%),
-    linear-gradient(58deg,#010101 83%,rgba(215, 220, 226, 0.54) 23%);
+    linear-gradient(58deg,#010101 83%,rgba(79, 144, 229, 0.54) 23%);
   background-blend-mode: normal, lighten, multiply, hard-light;
   font-family: "DM Sans", sans-serif;
   overflow: hidden;
@@ -49,9 +47,9 @@ ul {
 }
 
 .app-header {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 32px;
-  margin: 0 0 1 2px 0;
+  margin: 0 0 12px 0;
   color: #272727;
 }
 
@@ -99,7 +97,7 @@ ul {
   display: flex;
   align-items: center;
   padding: 8px;
-  border-radius: 35px;
+  border-radius: 20px;
   margin-bottom: 12px;
 }
 
@@ -119,22 +117,6 @@ ul {
   appearance: none;
 }
 
-.data-list-item input:hover {
-  border-color: var(--checkbox-color);
-  box-shadow: 0 0 0 3px var(--checkbox-shadow);
-}
-
-.data-list-item input:checked {
-  background-size: 10px;
-  border: 1px solid var(--checkbox-color);
-  background-color: var(--checkbox-color);
-}
-
-.data-list-item input:checked {
-  background-size: 10px;
-  border: 1px solid var(--checkbox-color);
-  background-color: var(--checkbox-color);
-}
 
 .data-list-item-label {
   display: flex;

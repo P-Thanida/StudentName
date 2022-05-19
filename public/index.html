@@ -9,7 +9,7 @@
     <link rel="stylesheet"href="main.css">
   </head>
   <body>
-    <!-- <div id="app"></div> -->
+    
     <div class="app-container" id="datalist">
       <h1 class="app-header">Name</h1>
       <div class="add-data">
@@ -20,7 +20,6 @@
       <ul class="data-list">
         <li class="data-list-item" v-for="data in datas">
           <label class="data-list-item-label">
-            <input type="checkbox" />
             <span>{{data.name}}</span>
           </label>
           <span class="delete-btn" @click="delItem(data)" title="delete data">{{data.del}}</span>

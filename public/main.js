@@ -17,7 +17,7 @@
                     return
                 }
                 this.datas.push({ 
-                    name:this.datas.name,
+                    name: this.datas.name,
                     del: ''
                 });
                 this.datas.name ="";        
